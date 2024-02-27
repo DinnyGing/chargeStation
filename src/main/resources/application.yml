@@ -1,1 +1,12 @@
-
+server:
+  port: 8090
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/station
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver

@@ -15,9 +15,8 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = "charge_station")
-public class ChargeStation {
+public class ChargingStation {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Integer id;
 	String title;
 	String description;
@@ -29,5 +28,5 @@ public class ChargeStation {
 	@Size(min = 1, max = 8)
 	@NotNull
 	@OneToMany(cascade = CascadeType.ALL)
-	List<ChargeConnector> chargeConnectors;
+	List<ChargingConnector> chargeConnectors;
 }

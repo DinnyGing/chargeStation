@@ -1,4 +1,7 @@
 package com.my.chargestation.repos;
 
-public interface ChargeStationRepository extends org.springframework.data.jpa.repository.JpaRepository<com.my.chargestation.models.ChargeStation, java.lang.Integer> {
+import com.my.chargestation.models.ChargingStation;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ChargingStationRepository extends JpaRepository<ChargingStation, Integer> {
 }

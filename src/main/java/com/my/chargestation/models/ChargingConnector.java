@@ -2,7 +2,6 @@ package com.my.chargestation.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -13,10 +12,10 @@ import lombok.*;
 @Builder
 @Entity
 @Table(name = "charge_connector")
-public class ChargeConnector {
+public class ChargingConnector {
 	@Id
 	Integer id;
-	@NotEmpty
+//	@NotEmpty
 	@Enumerated(EnumType.STRING)
 	TypeConnector typeConnector;
 	@NotNull
